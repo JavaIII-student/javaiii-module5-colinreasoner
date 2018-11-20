@@ -1,3 +1,10 @@
+/*
+ * Author: Colin Reasoner
+ * Course: CSE-40481 Java Programming III
+ * Section: 134318
+ * November 24, 2018
+ */
+
 package module5;
 
 import java.util.List;
