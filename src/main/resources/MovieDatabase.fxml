@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+ Author: Colin Reasoner
+ Course: CSE-40481 Java Programming III
+ Section: 134318
+ November 24, 2018
+ Modified from AddressBook example, Chapter 24 of Deitel text book
+-->
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
