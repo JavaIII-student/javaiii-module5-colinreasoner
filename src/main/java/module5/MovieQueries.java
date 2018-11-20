@@ -56,7 +56,7 @@ public class MovieQueries {
 
       while (resultSet.next()) {
         results.add(new Movie(
-            resultSet.getInt("id"),
+            resultSet.getInt("movieId"),
             resultSet.getString("title"),
             resultSet.getInt("rating"),
             resultSet.getString("description")));
@@ -85,7 +85,7 @@ public class MovieQueries {
 
       while (resultSet.next()) {
         results.add(new Movie(
-            resultSet.getInt("id"),
+            resultSet.getInt("movieId"),
             resultSet.getString("title"),
             resultSet.getInt("rating"),
             resultSet.getString("description")));
@@ -126,7 +126,7 @@ public class MovieQueries {
 
       System.out.println("Creating movies Table - This will throw an exception if the table is already created.");
       stmt.execute("CREATE TABLE movies (" +
-          "id INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)," +
+          "movieId INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)," +
           "title VARCHAR(255)," +
           "rating INTEGER," +
           "description VARCHAR(255))");

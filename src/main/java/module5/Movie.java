@@ -8,24 +8,24 @@
 package module5;
 
 public class Movie {
-  private int id;
+  private int movieId;
   private String title;
   private int rating;
   private String description;
 
-  public Movie(int id, String title, int rating, String description) {
-    this.id = id;
+  public Movie(int movieId, String title, int rating, String description) {
+    this.movieId = movieId;
     this.title = title;
     this.rating = rating;
     this.description = description;
   }
 
-  public int getId() {
-    return id;
+  public int getMovieId() {
+    return movieId;
   }
 
-  public void setId(int id) {
-    this.id = id;
+  public void setMovieId(int movieId) {
+    this.movieId = movieId;
   }
 
   public String getTitle() {
@@ -58,7 +58,7 @@ public class Movie {
   }
 
   public String toStringFull() {
-    return "ID: " + this.getId() +
+    return "ID: " + this.getMovieId() +
         " Title: " + this.getTitle() +
         " Rating: " + this.getRating() +
         " Description: " + this.getDescription();
