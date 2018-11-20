@@ -54,6 +54,10 @@ public class Movie {
 
   @Override
   public String toString() {
+    return this.getTitle();
+  }
+
+  public String toStringFull() {
     return "ID: " + this.getId() +
         " Title: " + this.getTitle() +
         " Rating: " + this.getRating() +

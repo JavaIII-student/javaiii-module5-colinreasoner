@@ -7,7 +7,7 @@
 
 package module5;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -72,7 +72,7 @@ public class MovieDatabaseController {
   @FXML
   public void addEntryButtonPressed(ActionEvent event) {
     int result = movieQueries.addMovie(
-        titleTextField.getText(), Integer.getInteger(ratingTextField.getText()),
+        titleTextField.getText(), Integer.parseInt(ratingTextField.getText()),
         descriptionTextField.getText());
 
     if (result == 1) {

@@ -10,10 +10,8 @@ public class MovieDatabase extends Application {
 
   @Override
   public void start(Stage stage) throws Exception {
-    FXMLLoader loader = new FXMLLoader();
-    loader.setClassLoader(getClass().getClassLoader());
-    loader.setLocation(getClass().getResource("MovieDatabase.fxml"));
-    Parent root = loader.load();
+    Parent root =
+        FXMLLoader.load(getClass().getClassLoader().getResource("MovieDatabase.fxml"));
 
     Scene scene = new Scene(root);
     stage.setTitle("Movie Database");
